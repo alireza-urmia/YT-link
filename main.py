@@ -1,8 +1,10 @@
 from pytube import Playlist
 
-playlist = Playlist('')
+playlist = Playlist('https://youtube.com/playlist?list=PLLRM7ROnmA9H_8wqcxoKTMU5gZE6BOyhm&si=_VR1h4SER3JXhW47')
 
-print('Number of videos in playlist: %s' % len(playlist.video_urls))
 
-for video_url in playlist.video_urls:
-    print(video_url)
+# Save episodes links of playlist to text file
+with open('episodes_urls.txt', 'w') as f:
+    f.write('number of videos exist on playlist: ' + str(len(playlist.video_urls)) + '\n' + '\n')
+    for video_url in playlist.video_urls:
+        f.write(video_url + '\n')
