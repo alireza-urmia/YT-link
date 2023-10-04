@@ -1,7 +1,7 @@
 from pytube import Playlist
 
 # Add target playlist link between quotes
-playlist = Playlist('https://youtube.com/playlist?list=PLLRM7ROnmA9H_8wqcxoKTMU5gZE6BOyhm&si=_VR1h4SER3JXhW47')
+playlist = Playlist('https://www.youtube.com/playlist?list=PL7MXODW7Gj1c1jviyYkRHKNeU_9BK0Ud7')
 
 
 # Save episodes links of playlist to text file
